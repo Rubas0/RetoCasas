@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Housinglocation } from '../housinglocation';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-housing-location',
-  imports: [],
+  standalone: true,
+  imports: [RouterLink],
   templateUrl: './housing-location.html',
-  styleUrl: './housing-location.css',
+  styleUrls: ['./housing-location.css']
 })
-export class HousingLocation {
-
+export class HousingLocationComponent {
+  @Input() housingLocation!: Housinglocation;
 }

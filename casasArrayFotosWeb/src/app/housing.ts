@@ -5,7 +5,6 @@ import { Housinglocation } from './housinglocation';
   providedIn: 'root'
 })
 export class HousingService {
-
   // Array con las 10 casas
   housingLocationList: Housinglocation[] = [
     {

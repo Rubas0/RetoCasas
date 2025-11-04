@@ -1,0 +1,24 @@
+:host {
+  --content-padding: 10px;
+}
+
+header {
+  display: block;
+  height: 60px;
+  padding: var(--content-padding);
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.brand-name {
+  margin-top: 15px;
+}
+
+.brand-logo {
+  height: 44px;
+  width: 44px;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.content {
+  padding: var(--content-padding);
+}
