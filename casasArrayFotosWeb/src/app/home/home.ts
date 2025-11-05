@@ -21,12 +21,9 @@ export class HomeComponent {
   }
 
   filterResults(text: string) {
-    console.log('Buscando:', text);
-    console.log('Lista completa:', this.housingLocationList);
 
     if (!text) {
       this.filteredLocationList = this.housingLocationList;
-      console.log('Sin texto, mostrando todas');
       return;
     }
 
@@ -34,6 +31,5 @@ export class HomeComponent {
       casa => casa.city.toLowerCase().includes(text.toLowerCase())
     );
 
-    console.log('Resultados filtrados:', this.filteredLocationList);
   }
 }
